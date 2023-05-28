@@ -5,6 +5,7 @@ import {View, Text} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {HomeScreen, SplashScreen, LoginScreen} from '../screens';
+import MainNavigation from './MainNavigation';
 
 const Stack = createNativeStackNavigator();
 
@@ -27,8 +28,8 @@ function RootNavigation() {
           }}
         />
         <Stack.Screen
-          name="HomeScreen"
-          component={HomeScreen}
+          name="MainScreen"
+          component={MainNavigation}
           options={{
             headerShown: false,
           }}
